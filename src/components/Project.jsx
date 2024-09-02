@@ -45,6 +45,7 @@ const Project = ({ projects }) => {
                         <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -100 }} transition={{ duration: 1 }} className='relative w-full lg:w-1/4'>
                             <img src={project.image} alt={project.title} width={150} height={150} className='mb-6 rounded' />
                             {project.inProgress && <span className='absolute top-0 left-0 bg-neutral-900 text-purple-500 text-xs font-bold py-1 px-2 z-10'>in Progress</span>}
+                            {/* <div className="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity duration-300 rounded h-[150px] w-[150px] hover:cursor-pointer"></div> */}
                         </motion.div>
                         <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -100 }} transition={{ duration: 1 }} className='w-full max-w-xl lg:w-3/4'>
                             <h6 className='mb-2 font-semibold'>{project.title}</h6>
